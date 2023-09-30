@@ -1,5 +1,6 @@
 const path = require('path')
 
+// default path delimiter(separator) of files name of this OS
 console.log(path.sep)
 
 // path.join will generate a normalized file path
