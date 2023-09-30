@@ -6,7 +6,7 @@ if (amount < 10) {
   console.log('large number')
 }
 
-require('./second')
+const someName = require('./second')
 console.log(`It's my first node app`)
 
 console.log(someName)
