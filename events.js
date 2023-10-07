@@ -13,4 +13,5 @@ customEmitter.on('response', () => {
   console.log(`data eaten`)
 })
 
+// we can pass data when emitting events
 customEmitter.emit('response', 'tony', 40)
