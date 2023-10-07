@@ -1,1 +1,1 @@
-Result: Hello this is the first text file., Hello this is second text file
+Mistaku result: Hello this is the first text file. :: Hello this is second text file
