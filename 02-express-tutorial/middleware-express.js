@@ -1,10 +1,17 @@
 const express = require('express')
 const app = express()
+const morgan = require('morgan')
 const logger = require('./logger')
+const authorize = require('./authorize')
 
-app.use('/api', logger)
+// our own middleware
+app.use([logger, authorize])
+
+// third-party middleware
+app.use(morgan('tiny'))
 
 app.get('/', (req, res) => {
+  console.log(req.user)
   res.send('Home')
 })
 
